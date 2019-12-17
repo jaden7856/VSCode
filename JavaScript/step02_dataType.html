@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step02_dataType</title>
+    <script>
+        //------ 원시형 자료형 -------//
+
+        //1. number type
+        let num1 = 10; //int
+        let num2 = 20.1; //float
+
+        console.log(typeof num1); // number
+        console.log(typeof num2); // number
+
+
+        //2. string type
+        let myNmae = "조현재";
+        console.log(typeof myNmae); // String
+        let myNumber1 = "10";
+        console.log(myNumber1 == num1); // 값비교
+        console.log(myNumber1 === num1); // 값과 자료형 비교
+
+        
+        //3. boolean type
+        let isRun = true;
+        let isGreater = 10 > 5;
+
+        console.log(typeof isRun); // boolean
+
+
+        //4. undefined type 
+        let test;
+        console.log(typeof test); // undefinded
+        console.log(test == "undefined");
+        console.log(test === undefined);
+        
+
+        //------ 참조형 자료형 -------//
+
+        //5. array type
+        const ourName = ["조현재", "잡스", '메조스'];
+        console.log(typeof ourName); // object
+
+
+        //6. plain object type
+        const obj = {num:1, name : '조현재', isMan : true};
+        console.log(typeof obj);
+
+
+        //7. function type
+        // 함수식
+        const f = function() {
+
+        }
+        // 선언식 함수
+        function sum() {
+
+        }
+        console.log(typeof f);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

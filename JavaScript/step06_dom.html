@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step06_dom</title>
+    <script>
+        window.onload = function(){
+            console.log('onload');
+            const h1 = document.createElement("h1");
+            const textNode = document.createTextNode("Hello Hi");
+            h1.appendChild(textNode);
+            document.body.appendChild(h1);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+console.log("end to html");
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>step04_manipulation</title>
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //$("p").prepend("<strong>Hi!!!</strong>")  // Hi!!!jQuery
+            //$("<strong>Hi!!!</strong>").prependTo("p");
+
+            //$("p").append("<strong>Hi!!!</strong>")     // jQueryHi!!!
+            //$("<strong>Hi!!!</strong>").appendTo("p");
+
+            //$('p').after("<strong>Hi!!!af</strong>");
+            //$('p').before("<strong>Hi!!!be</strong>");
+
+            //$('p').text("<strong>HelloQuery</strong>");
+            //$('p').html("<strong>HelloQuery</strong>");
+            //console.log($('p').text());
+            //console.log($('p').html());
+
+            //$("p").wrap("<div></div>");
+
+            //$("p").remove();
+            //$("p").detach();
+
+            $("p").empty();
+        });
+    </script>
+    <style type="text/css">
+        div {
+            border: 1px solid skyblue
+        }
+
+        p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>jQuery</p>
+</body>
+
+</html>

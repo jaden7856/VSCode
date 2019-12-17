@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step03_grid_xl</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <style>
+        .row {
+            margin-bottom: 10px;
+        }
+        [class *=col] {
+            background-color: cornflowerblue;
+            border: 1px solid wheat;
+            height: 50px;
+            text-align: center;
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--
+            width 992px 이상일때 col-xl-" class가 적용된다.
+            992px 미만일떄는 media query에 의해 col-x;-" ckass가
+            적용되지 않고 div 요소의 block 특성에 의해 100% width를
+            가지며 수직으로 쌓이게 된다.
+        -->
+        <div class="row">
+            <div class="col-xl-4">col-xl-4</div>
+            <div class="col-xl-4">col-xl-4</div>
+            <div class="col-xl-4">col-xl-4</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8">col-xl-8</div>
+            <div class="col-xl-4">col-xl-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xl-3">col-xl-3</div>
+            <div class="col-md-6 col-xl-3">col-xl-3</div>
+            <div class="col-md-6 col-xl-3">col-xl-3</div>
+            <div class="col-md-6 col-xl-3">col-xl-3</div>
+        </div>
+    </div>
+</body>
+</html>

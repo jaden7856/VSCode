@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step01_var</title>
+    <script>
+        // 한줄 주석
+        /*
+        여러줄 주석
+        */
+
+        var num1 = 1000;
+        var num1 = 2120; // var 이중선언이 가능하다.
+
+        //문자열 선언하는 방법
+        var yourName = "조국";
+        var ourName = '조국을 사랑합니다.';
+        var myName = `dfliejffaejflaefaef
+        aefliaejfliaejfliadfjeailf
+        eafielajfeilfjaelfiljeli`;  // es 6에 추가된 문자열
+
+        console.log(num1);
+        console.log(yourName);
+        console.log(ourName);
+        console.log(myName);
+
+
+        console.log(name2);
+        var name2 = "test"; // variable hoisting
+        console.log(name2);
+
+        /*========================================*/
+
+        foo();
+        function foo(){ // function hoisting
+            console.log("funtion - foo");
+        }
+
+
+        //baz();
+        var baz = function() {  // function hoisting - x
+            console.log("function - baz");
+        }
+        baz();
+
+        /*========================================*/
+
+        let a1 = 1000;
+        //let a1 = 2000;
+        console.log(a1);
+
+
+        var b1 = 100;
+        console.log(b1);
+        if(true) {
+            var b1 = 200;
+            console.log(b1);
+        }
+        console.log(b1); //200
+
+
+        let c1 = 100;
+        console.log(c1);
+        if(true) {
+            let c1 = 200;
+            console.log(c1);
+        }
+        console.log(c1); //100
+
+
+        const d1 = 10;
+        //d1 = 20;
+
+
+        const e1 = [1,2,3];
+        e1.push(4);
+        console.log(e1);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

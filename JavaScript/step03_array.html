@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>step03_array</title>
+    <script>
+        /*
+         array type => object
+         1. []를 이용해서 만든다.
+         2. 순서가 중요한 데이터를 처리할 때 사용한다.
+         3. 0부터 시작한다.
+        */
+
+        // 배열 생성해서 할당
+        const nums = [10, 20, 30, 40];
+        const nums1 = new Array(10, 20, 30, 40);
+        const nums2 = Array(10, 20, 30, 40);
+
+        const names = ['홍길동', '김영수', '이철희'];
+
+
+        //자바스크립트 배열은 모든 자료형을 넣을 수 있다.
+        const randoms = ['아무개', 10, false];
+
+
+        // 100개의 방이 생성되면 비어 있는 방에는 아무값도 들어잇지 않음
+        nums[99] = 50;
+
+        nums[0] = 100;
+        nums[1] = 200;
+        nums[2] = 300;
+        nums[3] = 400;
+
+        console.log(typeof nums);  //object
+        console.log(nums);
+
+
+        // join('') : 배열의 모든 요소를 문자열로 만들어줌
+        let str = nums.join('');
+        console.log(str);
+
+        /*========================================*/
+
+        nums.splice(2, 1);   // 2번째 인덱스 부터 1개 제거
+        console.log(nums);
+
+        /*========================================*/
+
+        nums.push(9000);    // 배열에 데이터 추가
+        console.log(nums);
+
+        /*========================================*/
+
+        let size = nums.length; // 배열의 크기
+        console.log(size);  // 100
+
+        //배열 출력
+        for(let i=0; i < nums.length; i++) {
+            console.log(nums[i]);
+        }
+
+        // for .. in
+        for(let i in nums) {
+            console.log(nums[i]);   // undefined가 없이 출력된다.
+        }
+
+        // es6 for .. of
+        for(let value of nums) {
+            console.log(value);  // 일반 배열출력과 똑같다.
+        }
+
+        // es5 forEach
+        nums.forEach(function(value, index){
+            console.log(index + "," + value);
+        });
+
+        // es6 arrow function
+        // function : => ㅅ=
+        nums.forEach((value, index) => {
+            console.log(index + "," + value);
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
